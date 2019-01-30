@@ -1,0 +1,8 @@
+{
+  "name": "testing-i",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/BryceEvans/testing-i.git",
+  "author": "BryceEvans <evans.bryce@gmail.com>",
+  "license": "MIT"
+}
