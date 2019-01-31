@@ -1,2 +1,0 @@
-const toTest = require('./function');
-
