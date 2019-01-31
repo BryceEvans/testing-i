@@ -15,13 +15,13 @@ const items = [
     name: 'dagger',
     type: 'weapon',
     durability: 30,
-    enhancement: 0
+    enhancement: 20
   },
   {
     name: 'broadsword',
     type: 'weapon',
     durability: 80,
-    enhancement: 0
+    enhancement: 16
   },{
     name: 'shield',
     type: 'armor',
