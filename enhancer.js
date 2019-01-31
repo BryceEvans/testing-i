@@ -4,12 +4,13 @@ module.exports = {
     return item;
   },
 
-  fail: (item) => {
+  // fail: (item) => {
 
-  },
+  // },
 
-  repair: (item) => {
-
-  }
+  // repair: (item) => {
+  //   item.durability = 100;
+  //   return item;
+  // }
 
 };
