@@ -10,7 +10,7 @@ module.exports = {
             let enhanceLevel = '[+' + item.enhancement + ']';
             item.name = enhanceLevel + ' ' + item.name;
           }
-        } else if (item.enhancement === 15) {
+          else if (item.enhancement === 15) {
           let enhanceLevel = '[PRI]';
           item.name = enhanceLevel + ' ' + item.name;
         } else if (item.enhancement === 16) {
@@ -22,6 +22,7 @@ module.exports = {
         } else if (item.enhancement === 18) {
           let enhanceLevel = '[TET]';
           item.name = enhanceLevel + ' ' + item.name;
+        }
         }
       }
         else if (item.enhancement === 20) {
