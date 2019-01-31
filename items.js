@@ -9,7 +9,7 @@ const items = [
     name: 'helmet',
     type: 'armor',
     durability: 50,
-    enhancement: 0
+    enhancement: 1
   },
   {
     name: 'dagger',

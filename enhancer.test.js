@@ -21,7 +21,8 @@ const enhancedItems = items.map(enhancer.success);
 // })
 
 test('when enhancement succeeds', () => {
-  expect(enhancer.success(enhancedItems[0].enhancement)).toBe(1);
+  expect(enhancer.success(enhancedItems[1].enhancement)).toBe(2);
+  expect(enhancer.success(enhancedItems[1].name)).toEqual('[+2] helmet');
 })
 
 // test('repair item to durability of 100', () => {
