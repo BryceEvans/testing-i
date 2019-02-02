@@ -32,7 +32,7 @@ const items = [
     name: 'staff',
     type: 'weapon',
     durability: 10,
-    enhancement: 0
+    enhancement: 5
   },
   {
     name: 'shortsword',
