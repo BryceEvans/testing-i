@@ -14,6 +14,18 @@ describe('success', () => {
   });
 });
 
+describe('fail', () => {
+  test('when enhancement failss', () => {
+    expect(enhancer.fail(enhancedItems[0].enhancement)).toBe(1);
+    expect(enhancer.fail(enhancedItems[1].enhancement)).toBe(2);
+    expect(enhancer.fail(enhancedItems[1].name)).toEqual('[+2] helmet');
+    expect(enhancer.fail(enhancedItems[0].name)).toEqual('[+1] shortsword');
+    // expect(enhancer.fail(enhancedItems[6].name)).toEqual('[+8] shortsword');
+    expect(enhancer.fail(enhancedItems[6].durability)).toBe(95);
+    // expect(enhancer.fail(enhancedItems[7].durability)).toBe(60);
+  });
+});
+
 
 
 // describe('repair', () => {

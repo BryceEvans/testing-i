@@ -22,7 +22,8 @@ const items = [
     type: 'weapon',
     durability: 80,
     enhancement: 16
-  },{
+  },
+  {
     name: 'shield',
     type: 'armor',
     durability: 80,
@@ -38,13 +39,13 @@ const items = [
     name: 'shortsword',
     type: 'weapon',
     durability: 100,
-    enhancement: 0
+    enhancement: 8
   },
   {
     name: 'longsword',
     type: 'weapon',
     durability: 70,
-    enhancement: 0
+    enhancement: 15
   },
   {
     name: 'chain mail',

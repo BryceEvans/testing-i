@@ -33,12 +33,21 @@ module.exports = {
     return item;
   },
 
-  // fail: (item) => {
-  //     // The durability of the item is decreased by 5 if the item's enhancement is between 0 and 14.
-  //     // The durability of the item is decreased by 10 if the item's enhancement is greater than 14.
-  //     // If the item's enhancement level is greater than 16 (DUO, TRI, TET), the enhancement level decreases by 1 (a DUO item would go back to PRI on failure).
-
-  // },
+  fail: (item) => {
+      // The durability of the item is decreased by 5 if the item's enhancement is between 0 and 14.
+      // The durability of the item is decreased by 10 if the item's enhancement is greater than 14.
+      // If the item's enhancement level is greater than 16 (DUO, TRI, TET), the enhancement level decreases by 1 (a DUO item would go back to PRI on failure).
+    if ((item.enhancment < 5 && item.type === 'armor') || (item.enhancment < 7 && item.type === 'weapon')) {
+      item.enhancement = item.enhancement+1;
+      let enhanceLevel = '[+' + item.enhancement + ']';
+      item.name = enhanceLevel + ' ' + item.name;
+    } else if (item.enhancement < 15) {
+      item.durability = item.durability - 5;
+    } else if (item.enhancement > 14 && item.enhancement < 16) {
+      item.durability = item.durability - 10;
+    }
+    return item;
+  },
 
   // repair: (item) => {
   //   item.durability = 100;
